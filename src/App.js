@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./Components/Navbar";
+import Payment from "./Components/Payment";
+import SideBody from "./Components/SideBody";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <div className="bg-[url('file:///D:/Aditi%20Photos%20and%20Sign/programming/Payment%20Page/payment/src/bg.svg')] bg-cover bg-no-repeat">
+        <div className="flex space-x-96">
+          <SideBody />
+          <Payment />
+        </div>
+      </div>
+    </>
   );
 }
 
